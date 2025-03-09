@@ -1,7 +1,7 @@
 function searchSite() {
     let query = document.getElementById('search-bar').value.toLowerCase();
     let pages = {
-        'home': 'journal.html',
+        'home': 'index.html',
         'authors': 'authors.html',
         'publications': 'publications.html',
         'faq': 'faq.html'
