@@ -1,28 +1,77 @@
-body {
-    font-family: Arial, sans-serif;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f5e9; /* light green background */
+    color: white; /* White text by default */
+    line-height: 1.6;
     text-align: center;
 }
 
+/* Header Styling */
 header {
-    background-color: #333;
+    background-color: #333; /* Black background for the top */
     color: white;
-    padding: 15px;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Navigation Bar */
 nav a {
     color: white;
     margin: 0 15px;
     text-decoration: none;
+    font-size: 18px;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Search Bar */
 input#search-bar {
     margin-top: 10px;
     padding: 5px;
-    width: 200px;
+    width: 250px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
 }
 
+/* Main Content Styling */
 main {
+    padding: 100px 20px 20px; /* Space to accommodate fixed header */
+    background-color: #43a047; /* Slightly darker green for main area */
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
     padding: 20px;
+    margin-top: 20px;
 }
